@@ -1,0 +1,1 @@
+![dsadsadas](/geometria/03/assets/c.png)
