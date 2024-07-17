@@ -20,33 +20,33 @@ int main() {
 
   cout << fixed << setprecision(8);
   for (int i = 1; i <= n; i++) {
-    long double l, n, c;
-    cin >> l >> n >> c;
+    long double chord, n, c;
+    cin >> chord >> n >> c;
 
-    long double newLength = (1 + n * c) * l;
+    long double arc = (1 + n * c) * chord;
 
     long double rMax = 1e19;
     long double rMin = 0;
     long double r;
-    long double angle;
+    long double alpha;
     for (;;) {
       r = (rMax + rMin)/2;
 
-      angle = newLength/r;
-      long double chord = 2*r*sin(angle/2);
+      alpha = arc/r;
+      long double calculatedChord = 2*r*sin(alpha/2);
 
-      if (abs(chord - l) <= 1e-8) {
+      if (abs(calculatedChord - chord) <= 1e-8) {
         break;
       }
 
-      if (chord < l) {
+      if (calculatedChord < chord) {
         rMin = r;
       } else {
         rMax = r;
       }
     }
 
-    long double res = r - cos(angle / 2) * r;
+    long double res = r*(1 - cos(alpha / 2));
     cout << "Case " << i << ": " << res << endl;
   }
 }
