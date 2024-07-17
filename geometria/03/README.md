@@ -16,7 +16,7 @@ Senha: tep
 - [G - Olympics](https://vjudge.net/contest/638624#problem/G)
   - [Solução](/geometria/03/g.cpp)
 - [H - Incredible Molecules](https://vjudge.net/contest/638624#problem/H)
-  - Sem solução ainda :(
+  - [Solução](/geometria/03/h.cpp)
 - [I - Intersection between Circle and Rectangle](https://vjudge.net/contest/638624#problem/I)
   - Sem solução ainda :(
 - [J - Expanding Rods](https://vjudge.net/contest/638624#problem/J)
